@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida</title>
+  <style>
+    body {
+      background-image: url('https://i.ibb.co/MymFnQcj/FB-IMG-1756420673822.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      background-blend-mode: lighten;
+      text-align: left;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 3em;
+      color: black;
+      margin-top: 20px;
+    }
+
+    .datos-personales {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      display: flex;              /* Texto y foto en fila */
+      justify-content: flex-start; /* Texto a la izquierda, foto al frente */
+      align-items: center;        /* Centra verticalmente la foto con el texto */
+      gap: 20px;                  /* Separación entre texto y foto */
+    }
+
+    .datos-texto {
+      color: red;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .datos-texto p {
+      margin: 6px 0;
+    }
+
+    .datos-texto span {
+      font-size: 0.95em;
+      text-decoration: underline;
+      color: black;
+      font-weight: bold;
+    }
+
+    .datos-personales img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      border: 3px solid black;
+      object-fit: cover;
+    }
+
+    .acerca {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .acerca h2 {
+      color: black;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .descripcion-personal {
+      color: green;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 20px auto;
+      border: 3px solid black;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /* Opcional: puedes eliminar el @media si quieres que la foto siempre esté al frente */
+    @media (max-width: 480px) {
+      /* Aquí ya no cambia nada, la foto sigue al frente del texto */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="titulo">Hoja de Vida</h1>
+  <div class="datos-personales">
+    <div class="datos-texto">
+      <p>Nombre: <span>Cristian</span></p>
+      <p>Apellido: <span>González</span></p>
+      <p>Edad: <span>17 años</span></p>
+      <p>Fecha de nacimiento: <span>05/10/2008</span></p>
+    </div>
+    <img src="https://i.ibb.co/3YdMBtCt/1000060488.jpg" alt="Foto de Cristian">
+  </div>
+  <div class="acerca">
+    <h2>Acerca de mí</h2>
+    <p class="descripcion-personal">
+      Soy una persona apasionada por la producción agropecuaria, actualmente cursando el programa
+      de Técnico en Producción Agropecuaria en el SENA mientras termino mis estudios secundarios.
+      Me gusta explorar la naturaleza, cantar y tocar instrumentos musicales. Tengo muchos hobbies
+      y me gusta hacer varias cosas al mismo tiempo. Estoy emocionado por el futuro y las oportunidades
+      que se presentan, y estoy dispuesto a trabajar duro para lograr mis metas.
+    </p>
+  </div>
+  <h2 style="text-align:center;">Asignaturas que evalúa el ICFES</h2>
+  <table>
+    <tr>
+      <th>Materia</th>
+      <th>N1</th>
+      <th>N2</th>
+      <th>Promedio</th>
+    </tr>
+    <tr>
+      <td>Matemáticas</td>
+      <td>8.5</td>
+      <td>9.5</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>Sociales</td>
+      <td>8.0</td>
+      <td>8.5</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <td>Inglés</td>
+      <td>8.3</td>
+      <td>8.5</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>Lectura crítica</td>
+      <td>9.0</td>
+      <td>8.5</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <td>Naturales</td>
+      <td>9.0</td>
+      <td>8.6</td>
+      <td>8.8</td>
+    </tr>
+  </table>
+</body>
+</html>
